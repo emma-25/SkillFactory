@@ -14,7 +14,7 @@ Carry out a CheckPoint of the technologies used i class:
 - Create a home page containing the following:
     - A links that leads to Users.
         - Request to the Rest API of JSONPlaceholder, obtain the asynchronous result and render the following keys through a table:
-            - ID, Name, Email, Phone, City y Company.
+            - ID, Name, Email, Phone, City and Company.
     - A links to API - Rick & Morty.
         - Request to the Rick & Morty Rest API, get the asynchronous result and render in file.js that shows the characters of the series through a presentation card, render the first twenty characters .
     - To a Contact Form.
