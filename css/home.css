@@ -1,0 +1,73 @@
+footer {
+    height: inherit;
+    background: #4D4D5C;
+    color: rgb(206, 182, 185);
+    margin: -10px;
+    order: 2;
+    width: auto;
+}
+
+.foot {
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+
+.foot i {
+    color: pink;
+    font-size: 2.5rem;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.foot i:hover {
+    color: grey;
+    text-shadow: 0 0 0px grey;
+}
+
+.links {
+    width: 40%;
+    text-align: left;
+    display: inline-block;
+}
+
+footer p {
+    display: inline;
+    font-size: 1rem;
+    color: pink;
+}
+
+/*Responsive*/
+@media(max-width: 768px) {
+    /*Header*/
+    .show-menu,
+    .hide-menu {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4D4D5C;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8S;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}

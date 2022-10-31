@@ -1,0 +1,143 @@
+.form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background: rgba(77, 77, 92, 0.6);
+}
+
+.form__title {
+    display: contents;
+    font-size: 1.7rem;
+    font-weight: bold;
+    width: 90vw;
+    color: pink;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form__container {
+    align-items: flex-start;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+}
+
+.form__input {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.form__input-title {
+    color:#fff;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    width: 80px;
+}
+
+.form__name, .form__mail {
+    background: rgba(77, 77, 92, 0.6);
+    border: 1px solid;
+    border-radius: 5px;
+    color: pink;
+    font-size: 0.9rem;
+    margin: 4px;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.form__name::placeholder, .form__mail::placeholder {
+    color: palevioletred;
+}
+
+.form__textarea-section {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+}
+.form__message {
+    background: rgba(77, 77, 92, 0.6);
+    border: 1px solid;
+    border-radius: 5px;
+    color: pink;
+    font-size: 1.2rem;
+    margin: 3px -4px;
+    margin-bottom: 10px;
+    width: inherit;
+}
+
+.form__message::placeholder {
+    color: palevioletred;
+    font-size: 1rem;
+}
+
+.button {
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    color: rgb(209, 101, 121);
+    display: flex;
+    font-weight: bolder;
+    height: 2rem;
+    justify-content: center;
+    transition: 0.5s;
+    width: 100px;
+}
+
+.button:hover {
+    background: rgb(192, 186, 186);
+    color:rgb(150, 23, 65);
+}
+
+#print-results h3 {
+    text-align: center;
+    color: red;
+    font-size: 1.5em;
+    text-shadow: 0 0 3px red;
+}
+
+#print-results p {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.title {
+   text-align: center;
+   color: palevioletred;
+   font-size: 2rem;
+   margin: 1%;
+}
+
+.text {
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .form {
+        background-image: url('https://bit.ly/3z6B7dq');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    .form__container {
+        width: 60vw;
+    }
+    .form__title {
+        background: rgba(77, 77, 92, 0.6);
+        border: 1px solid transparent;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 15px;
+        text-align: center;
+        width: 50vw;
+    }
+    
+}

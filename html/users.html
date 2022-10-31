@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/users.css">
+    <title>Users</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Avalith.</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="show-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+                <a href="../index.html">Home</a>
+                <a href="./form.html">Form</a>
+                <a href="./users.html">Users</a>
+                <a href="./rickMorty.html">Rick & Morty</a>
+            <label for="check" class="hide-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section class="users">
+        <h1 class="title">Users</h1>
+        <table class="table-users">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Phone</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody id="user-info">
+        </tbody>   
+    </section>
+</body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../javascript/users.js"></script>
+</html>

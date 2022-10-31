@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Avalith.</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="show-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+                <a href="../index.html">Home</a>
+                <a href="./form.html">Form</a>
+                <a href="./users.html">Users</a>
+                <a href=".//rickMorty.html">Rick & Morty</a>
+            <label for="check" class="hide-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section class="form">
+        <div>
+            <h1 class="form__title">¡Complete the form!</h1>
+        </div>
+        <form class="form__container" id="form">
+            <div class="form__input">
+                <label for="name" class="form__input-title">Name</label>
+                <input class="form__name" type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form__input">
+                <label for="email" class="form__input-title">Email</label>
+                <input class="form__mail" type="email" id="email" name="email" placeholder="youremail@mail.com"required>
+            </div>
+            <div class="form__textarea-section"> 
+                <textarea class="form__message" name="message" id="message" cols="30" rows="10" placeholder="Write here the message..."></textarea>
+            </div>
+            <button type="submit" class="button" onclick="getInformation()">Send</button>
+        </form>
+    </section>
+    <div>
+        <div id="print-results"></div>
+    </div>
+</body>
+<script src="../javascript/form.js"></script>
+</html>
