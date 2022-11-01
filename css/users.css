@@ -39,3 +39,24 @@
     color: pink;
     font-size: 2rem;
 }
+
+/*Responsive*/
+@media(max-width: 768px) {
+    thead {
+        display: none;
+    }
+    
+    tr td:first-child {
+        background-color: rgba(77, 77, 92, 0.6);
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+
