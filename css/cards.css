@@ -46,6 +46,11 @@
    margin: 2%;
 }
 
+.paragraph {
+    color: pink;
+    font-size: 0.7rem;
+}
+
 /*Responsive*/
 
 @media (max-width: 768px) {
